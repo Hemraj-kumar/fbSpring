@@ -1,0 +1,39 @@
+import avatar from '../images/avatar.png'
+const panelright =[
+    {
+        id:1,
+        image:avatar,
+        name:"Kuttyma"
+    },
+    {
+        id:2,
+        image:avatar,
+        name:"Anime"
+    },
+    {
+        id:3,
+        image:avatar,
+        name:"Ash"
+    },
+    {
+        id:4,
+        image:avatar,
+        name:"Boomer"
+    },
+    {
+        id:5,
+        image:avatar,        
+        name:"Muhe"
+    },
+    {
+        id:6,
+        image:avatar,
+        name:"Saravanan"
+    },
+    {
+        id:7,
+        image:avatar,
+        name:"Jayasri"
+    }
+]
+export default panelright
