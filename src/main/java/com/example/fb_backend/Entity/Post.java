@@ -1,9 +1,11 @@
 package com.example.fb_backend.Entity;
+import jakarta.persistence.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import java.sql.Timestamp;
 import java.util.UUID;
 @Document("FaceData")
 public class Post {
+    @Id
     private int user_id;
     private String user_image;
     private String user_name;
