@@ -1,6 +1,6 @@
 package com.example.fb_backend.Controller;
 
-import com.example.fb_backend.Entity.Post;
+import com.example.fb_backend.Model.Post;
 import com.example.fb_backend.Service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -13,6 +13,7 @@ import java.util.UUID;
 public class PostController {
     @Autowired
     PostService postService;
+
     @GetMapping("/getPosts")
     public ArrayList<Post> getData(){
         ArrayList<Post> res=postService.fetchData();

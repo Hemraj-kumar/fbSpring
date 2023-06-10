@@ -1,6 +1,6 @@
 package com.example.fb_backend.Service;
 
-import com.example.fb_backend.Entity.Post;
+import com.example.fb_backend.Model.Post;
 import com.example.fb_backend.Repositry.PostRepo;
 import org.springframework.stereotype.Service;
 
