@@ -10,5 +10,5 @@ import java.util.UUID;
 @Repository
 public interface PostRepo extends MongoRepository<Post, UUID> {
     //overriding the actual methods
-//    ArrayList<Post> findAll();  //return type followed by method name
+    ArrayList<Post> findAll();  //return type followed by method name
 }

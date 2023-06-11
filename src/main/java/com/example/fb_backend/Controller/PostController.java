@@ -20,12 +20,12 @@ public class PostController {
         return res;
     }
     @PostMapping("/savePosts")
-    public void submitPost(@RequestBody Post post){
-       postService.submitData(post);
-//        return res;
+    public ArrayList<Post> submitPost(@RequestBody Post post){
+       ArrayList<Post> res=postService.submitData(post);
+        return res;
     }
 
-    @DeleteMapping("/deletePosts")
+    @DeleteMapping("/deletePosts/{post_id}")
     public ArrayList<Post> deletePosts(@PathVariable("post_id") UUID post_id){
         ArrayList<Post> res=postService.deleteData(post_id);
         return res;

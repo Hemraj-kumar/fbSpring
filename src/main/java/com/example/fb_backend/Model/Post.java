@@ -2,6 +2,8 @@ package com.example.fb_backend.Model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.UUID;
 @Document("facedata")
 public class Post {
@@ -13,7 +15,7 @@ public class Post {
     private String desc;
     private String post_image;
     private  int like;
-    private Timestamp dateTime;
+    private LocalDateTime timestamp;
 
     public UUID getPost_id() {
         return post_id;
@@ -70,28 +72,14 @@ public class Post {
         this.like = like;
     }
 
-    public Timestamp getDateTime() {
-        return dateTime;
+    public LocalDateTime getTimestamp() {
+        return timestamp;
     }
 
-    public void setDateTime(Timestamp dateTime) {
-        this.dateTime = dateTime;
+    public void setTimestamp(LocalDateTime timestamp) {
+        this.timestamp = timestamp;
     }
 
     public Post() {
-    }
-
-    @Override
-    public String toString() {
-        return "Post{" +
-                "post_id=" + post_id +
-                ", user_id=" + user_id +
-                ", user_image='" + user_image + '\'' +
-                ", user_name='" + user_name + '\'' +
-                ", desc='" + desc + '\'' +
-                ", post_image='" + post_image + '\'' +
-                ", like=" + like +
-                ", dateTime=" + dateTime +
-                '}';
     }
 }
