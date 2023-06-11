@@ -1,17 +1,19 @@
 package com.example.fb_backend.Model;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import java.sql.Timestamp;
 import java.util.UUID;
 @Document("facedata")
 public class Post {
-    private int user_id;
+    @Id
+    private UUID post_id;
+    private UUID user_id;
     private String user_image;
     private String user_name;
     private String desc;
     private String post_image;
     private  int like;
     private Timestamp dateTime;
-    private UUID post_id;
 
     public UUID getPost_id() {
         return post_id;
@@ -19,14 +21,6 @@ public class Post {
 
     public void setPost_id(UUID post_id) {
         this.post_id = post_id;
-    }
-
-    public int getUser_id() {
-        return user_id;
-    }
-
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
     }
 
     public String getUser_image() {
@@ -47,6 +41,13 @@ public class Post {
 
     public String getDesc() {
         return desc;
+    }
+    public UUID getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(UUID user_id) {
+        this.user_id = user_id;
     }
 
     public void setDesc(String desc) {
@@ -78,5 +79,19 @@ public class Post {
     }
 
     public Post() {
+    }
+
+    @Override
+    public String toString() {
+        return "Post{" +
+                "post_id=" + post_id +
+                ", user_id=" + user_id +
+                ", user_image='" + user_image + '\'' +
+                ", user_name='" + user_name + '\'' +
+                ", desc='" + desc + '\'' +
+                ", post_image='" + post_image + '\'' +
+                ", like=" + like +
+                ", dateTime=" + dateTime +
+                '}';
     }
 }

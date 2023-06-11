@@ -20,9 +20,9 @@ public class PostController {
         return res;
     }
     @PostMapping("/savePosts")
-    public ArrayList<Post> submitPost(@RequestBody Post post){
-        ArrayList<Post> res=postService.submitData(post);
-        return res;
+    public void submitPost(@RequestBody Post post){
+       postService.submitData(post);
+//        return res;
     }
 
     @DeleteMapping("/deletePosts")
