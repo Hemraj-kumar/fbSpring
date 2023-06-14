@@ -18,7 +18,7 @@ function Post({image,Name,pic}) {
             </div>
             {/* desc */}
             <div className='ml-3  p-2'>
-                <p>Love u Bujju...</p>
+                <p>Sinsoku...</p>
             </div>
             {/* img */}
             <div>

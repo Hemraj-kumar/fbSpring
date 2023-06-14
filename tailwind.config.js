@@ -7,6 +7,8 @@ export const theme = {
   colors: {
     fbwhite:"#F5FEFD",
     grey:"#D3D3D3",
+    blue:"#0096FF",
+    white:"#FFFFFF",
   },
   extend: {
     width :{

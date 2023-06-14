@@ -1,11 +1,11 @@
 import Home from "./Components/Home"
 import Navbar from "./Components/Navbar"
+import SignIn from "./Components/SiginIn"
 
 function App() {
   return (
       <div>
-        <Navbar/>
-        <Home />
+        <SignIn/>
       </div>
   )
 }

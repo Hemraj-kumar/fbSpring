@@ -9,12 +9,12 @@ const Posts =[
     {
         ava:avatar,
         img:p1,
-        name:"bujju"
+        name:"booomer"
     },
     {
         ava:avatar,
         img:p2,
-        name:"kuttyma"
+        name:"tanjiro"
     },
     {
         ava:avatar,

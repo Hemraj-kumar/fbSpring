@@ -9,7 +9,7 @@ const panelleft =[
     {
         id:1,
         image:avatar,
-        name:"bujju"
+        name:"Nezuko"
     },
     {
         id:2,

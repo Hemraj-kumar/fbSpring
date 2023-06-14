@@ -3,7 +3,7 @@ const panelright =[
     {
         id:1,
         image:avatar,
-        name:"Kuttyma"
+        name:"Nezuko"
     },
     {
         id:2,
