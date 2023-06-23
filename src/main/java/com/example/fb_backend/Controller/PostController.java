@@ -9,11 +9,15 @@ import java.util.ArrayList;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/postService")
+//@RequestMapping("/postService")
 public class PostController {
     @Autowired
     PostService postService;
 
+//    @GetMapping("/")
+//    public String home(){
+//        return ("<h1>hwllo</h1>");
+//    }
     @GetMapping("/getPosts")
     public ArrayList<Post> getData(){
         ArrayList<Post> res=postService.fetchData();

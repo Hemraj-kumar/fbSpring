@@ -9,11 +9,12 @@ import java.util.ArrayList;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/userService")
+//@RequestMapping("/userService")
 public class UserController {
 
     @Autowired
     UserService userService;
+
 
     @PostMapping("/saveData")
     public ArrayList<User> submitUserData(@RequestBody User user){
@@ -33,5 +34,8 @@ public class UserController {
         return arr;
     }
 
-
+//    @PutMapping("/updateUser/{user_id}")
+//    public ResponseEntity<User> update(@PathVariable("user_id") UUID uuid){
+//        return new ResponseEntity<User>(UserService.UserUpdate(uuid),HttpStatus.OK);
+//    }
 }

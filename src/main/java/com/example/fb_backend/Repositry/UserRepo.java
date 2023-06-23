@@ -9,4 +9,5 @@ import java.util.UUID;
 public interface UserRepo extends JpaRepository<User, UUID> {
     ArrayList<User> findAll();
     User save(User user);
+
 }
